@@ -1,6 +1,10 @@
 import json
 import netaddr
 
+"""
+This was written in Python 3.7.2.  The purpose of this file is to explore the dataset of IPv4 geolocation from https://datahub.io/collections/reference-data#ipv4-geolocation.
+"""
+
 infile = 'geo-ipv4.json'
 outfile = 'agg-ipv4.json'
 cidr_list = []
@@ -25,5 +29,3 @@ with open(outfile, 'w') as f:
 #        net_list = json.loads(net_list)
     json.dump(net_list, f, indent=2)
     
-
-
