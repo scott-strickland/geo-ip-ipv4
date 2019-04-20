@@ -17,6 +17,7 @@ def load_data():
     return cidr_list
 
 
+
 def write_data(cidr_list):
     """Write the extracted data to a new JSON file."""
     cidr_range = netaddr.IPSet(cidr_list)
@@ -33,5 +34,6 @@ if __name__ == '__main__':
     net_list = []
     load_data()
     write_data(cidr_list)
+
 
     
